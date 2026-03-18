@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Admin - CV Sébastien</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const pass = prompt("Accès restreint. Entrez le mot de passe :");
+        if (pass !== "R@oulsky85") {
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+
+<body class="admin-body">
+
+    <header class="admin-header">
+        <h1>📊 Tableau de Bord des Candidatures</h1>
+    </header>
+
+    <nav class="admin-nav">
+        <a href="index.html" class="btn-back">⬅ Retour au CV</a>
+        <div class="external-links">
+            <a href="https://analytics.google.com/" target="_blank" class="btn-google">Google Analytics ↗</a>
+            <a href="https://tagmanager.google.com/" target="_blank" class="btn-google">Tag Manager ↗</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-wrapper">
+        <section class="card">
+            <h2>Statistiques en temps réel</h2>
+            <iframe class="looker-iframe" src="https://lookerstudio.google.com/embed/reporting/b91b5f84-310f-4742-bb72-8d081487fe70/page/vdcsF"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
