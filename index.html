@@ -166,9 +166,17 @@
         </main>
     </div>
     <footer class="cv-footer">
-        <p>© 2026 Sébastien Fournest - <a href="admin.html" class="admin-access">Connexion</a></p>
+        <p>© 2026 Sébastien Fournest</p>
     </footer>
-
+    <script>
+        // Écoute les touches du clavier
+        document.addEventListener('keydown', function (event) {
+            // Si tu appuies sur la touche "A" (comme Admin)
+            if (event.key === 'a' || event.key === 'A') {
+                window.location.href = 'admin.html';
+            }
+        });
+    </script>
 </body>
 
 </html>
