@@ -285,3 +285,24 @@ section {
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.cv-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.8em;
+    color: #888; /* Couleur du texte normal */
+}
+
+.admin-access {
+    color: inherit; /* Prend la même couleur que le texte autour */
+    text-decoration: none;
+    cursor: default; /* La souris ne change pas en main, donc on ne devine pas le lien */
+    opacity: 0.3; /* Très fondu dans le décor */
+}
+
+.admin-access:hover {
+    color: #4285F4; /* Il devient bleu seulement si TU passes la souris dessus */
+    opacity: 1;
+    cursor: pointer;
+}
